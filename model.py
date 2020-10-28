@@ -77,7 +77,6 @@ class Rating(db.Model):
             user_id=self.user_id,
             score=self.score)
 
-
 ##############################################################################
 # Helper functions
 
@@ -102,3 +101,6 @@ if __name__ == "__main__":
 
     connect_to_db(app)
     print("Connected to DB.")
+
+query_1 = User.query.filter(User.email == 'cats@gmail.com').first()
+
