@@ -115,7 +115,7 @@ query_3 = User.query.filter(User.zipcode == '90703').all()
 query_4 = Rating.query.filter(Rating.score == 5).all()
 
 # Find the rating for the movie whose id is 7, from the user whose id is 6.
-
+query_5 = Rating.query.filter((Rating.user_id == 6) & (Rating.movie_id == 7)).first()
 
 # Find all ratings that are larger than 3.
 query_6 = Rating.query.filter(Rating.score > 3).all()
