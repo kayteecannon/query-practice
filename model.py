@@ -103,7 +103,7 @@ if __name__ == "__main__":
     print("Connected to DB.")
 
 # Find the user with the email cats@gmail.com.
-query_1 = User.query.filter(User.email == 'cats@gmail.com').first()
+query_1 = User.query.filter(User.email == 'cats@gmail.com').one()
 
 # Find any movies with the exact title “Cape Fear”.
 query_2 = Movie.query.filter(Movie.title == 'Cape Fear').all()
