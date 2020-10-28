@@ -109,6 +109,7 @@ query_1 = User.query.filter(User.email == 'cats@gmail.com').first()
 query_2 = Movie.query.filter(Movie.title == 'Cape Fear').all()
 
 # Find all users with the zipcode 90703.
+query_3 = User.query.filter(User.zipcode == '90703').all()
 
 # Find all ratings of with the score of 5.
 
