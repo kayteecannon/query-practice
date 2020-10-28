@@ -112,6 +112,7 @@ query_2 = Movie.query.filter(Movie.title == 'Cape Fear').all()
 query_3 = User.query.filter(User.zipcode == '90703').all()
 
 # Find all ratings of with the score of 5.
+query_4 = Rating.query.filter(Rating.score == 5).all()
 
 # Find the rating for the movie whose id is 7, from the user whose id is 6.
 
