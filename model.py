@@ -116,6 +116,7 @@ query_4 = Rating.query.filter(Rating.score == 5).all()
 
 # Find the rating for the movie whose id is 7, from the user whose id is 6.
 
-# Find all ratings that are larger than 3.
 
+# Find all ratings that are larger than 3.
+query_6 = Rating.query.filter(Rating.score > 3).all()
 
