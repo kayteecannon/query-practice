@@ -102,5 +102,18 @@ if __name__ == "__main__":
     connect_to_db(app)
     print("Connected to DB.")
 
+# Find the user with the email cats@gmail.com.
 query_1 = User.query.filter(User.email == 'cats@gmail.com').first()
+
+# Find any movies with the exact title “Cape Fear”.
+query_2 = Movie.query.filter(Movie.title == 'Cape Fear').all()
+
+# Find all users with the zipcode 90703.
+
+# Find all ratings of with the score of 5.
+
+# Find the rating for the movie whose id is 7, from the user whose id is 6.
+
+# Find all ratings that are larger than 3.
+
 
